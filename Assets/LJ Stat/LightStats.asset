@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca1deaa699df4341b8410c8672a464b, type: 3}
   m_Name: LightStats
   m_EditorClassIdentifier: Assembly-CSharp::LJ.Stats.StatSet
-  startStats: []
-  startEffects: []
+  startStats:
+  - {fileID: 11400000, guid: ef08ca50bf2274e48b946feebb388554, type: 2}
+  startEffects:
+  - {fileID: 11400000, guid: 1479ea4fffcaf1d4889e753cf0879ffb, type: 2}

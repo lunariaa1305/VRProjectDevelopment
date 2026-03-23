@@ -15,4 +15,4 @@ MonoBehaviour:
   dataSet: []
   effectType: {fileID: 0}
   interval: 0
-  isContinuous: 0
+  isContinuous: 1
