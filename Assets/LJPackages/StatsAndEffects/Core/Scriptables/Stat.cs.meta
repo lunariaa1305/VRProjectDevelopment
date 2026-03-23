@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: feb542592785b8941bd0bf67f352feae
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: d30e05d1d6f7bab45bcd420d5167bb4d, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Core/Scriptables/Stat.cs
+  uploadId: 772003

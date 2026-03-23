@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 53efb586d52031a4788b08f7ef462f75
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Custom/Applicators/ApplyStatEffectOnTriggerEnter.cs
+  uploadId: 772003

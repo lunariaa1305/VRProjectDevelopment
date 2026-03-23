@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8496929261bfae74ea72f5b8f36c6068
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/Visuals/Red.mat
+  uploadId: 772003

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 53d61265c21ca6e4383f8e04f3f6b7a6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/DemoInstances/Effects/EffectTypes/BluntForce.asset
+  uploadId: 772003

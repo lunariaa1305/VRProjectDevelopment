@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4cefbfec7fd6a8479625fd2f7d167ed, type: 3}
+  m_Name: Injure(Instant)
+  m_EditorClassIdentifier: 
+  dataSet:
+  - providesImmunityTo: []
+    modifiers:
+    - modType: 0
+      vectorValue: {x: 0, y: 0, z: 0}
+      floatValue: -10
+    targetStat: {fileID: 11400000, guid: 6ee89d9ae3eaab34eac9b27ab5df8ea9, type: 2}
+  effectType: {fileID: 11400000, guid: 53d61265c21ca6e4383f8e04f3f6b7a6, type: 2}
+  length: 0
+  isContinuous: 0

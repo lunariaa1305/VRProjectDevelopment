@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 246fa23afcdce9d449dd381f1afa214f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/Complex/RockEmDemo/Instances/Fighter.asset
+  uploadId: 772003

@@ -1,0 +1,94 @@
+{
+    "name": "RockEmInputs",
+    "maps": [
+        {
+            "name": "Standard",
+            "id": "25584fd2-6301-4ded-ad25-3077a5d9b286",
+            "actions": [
+                {
+                    "name": "Punch",
+                    "type": "Button",
+                    "id": "64ed21bf-4be3-464c-8f38-91d41ddfcd12",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Block",
+                    "type": "Button",
+                    "id": "444a78e3-6c84-4c59-be0b-d28ab50b64e0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "BluePunch",
+                    "type": "Button",
+                    "id": "db92090e-7c25-4cf5-bf8e-30a074d9058b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "BlueBlock",
+                    "type": "Button",
+                    "id": "7e6cf9d7-3706-4b5b-944e-4ba71f6b814a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "770bbed9-ba57-4ef9-a543-8965adc2ed5a",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Punch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "40299943-22be-4b4e-9d6d-baabe419bf74",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Block",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2041d3ee-e91d-46ec-8fb1-25fbeea85ebe",
+                    "path": "<Keyboard>/b",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BluePunch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9810f3f6-d770-47aa-8289-d4014459194f",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BlueBlock",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

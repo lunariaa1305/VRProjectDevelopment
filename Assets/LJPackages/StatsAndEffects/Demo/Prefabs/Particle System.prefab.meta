@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b23f167d5d201514baf2c07874c213e6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/Prefabs/Particle System.prefab
+  uploadId: 772003

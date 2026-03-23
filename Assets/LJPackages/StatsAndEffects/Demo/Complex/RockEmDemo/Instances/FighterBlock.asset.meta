@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2bf74f5f15b754e48b56d2f8e71ebc93
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/Complex/RockEmDemo/Instances/FighterBlock.asset
+  uploadId: 772003

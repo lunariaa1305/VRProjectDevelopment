@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: dbb1ae39d3cb33549a553fd7607dbdc8
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Utilities/Interfaces/IInitializable.cs
+  uploadId: 772003

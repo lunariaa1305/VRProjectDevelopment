@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d47deda47ee7fa64b9ec79ed6632fede
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/DemoInstances/Effects/OnFire.asset
+  uploadId: 772003

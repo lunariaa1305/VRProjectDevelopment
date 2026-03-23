@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 194f78857b9fcf14daed520ca849cee2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/DemoInstances/Effects/EffectTypes/Continuous
+    Wound.asset
+  uploadId: 772003
