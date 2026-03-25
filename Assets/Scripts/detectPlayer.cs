@@ -1,9 +1,13 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class detectPlayer : MonoBehaviour
 {
     CapsuleCollider lightArea;
     Light lightComponent;
+    public crawlScript crawlScript;
+
+    public float rateOfSpeedChange;
 
     Color currentCameraColor = Color.white;
 
@@ -21,21 +25,19 @@ public class detectPlayer : MonoBehaviour
 
     private void OnTriggerStay(Collider collider)
     {
-        Debug.Log("Hit:" + collider.name);
         if (collider.name == "PlayerController")
         {
-            Debug.Log("Hit");
             currentCameraColor = Color.darkRed;
+            crawlScript.speedModifier = crawlScript.speedModifier / rateOfSpeedChange;
         }
     }
 
     private void OnTriggerExit(Collider collider)
     {
-        Debug.Log("Unhit:" + collider.name);
         if (collider.name == "PlayerController")
         {
-            Debug.Log("Unhit");
             currentCameraColor = Color.white;
+            crawlScript.speedModifier = Mathf.Lerp(crawlScript.speedModifier, 2, 0.2f);
         }
     }
 }
