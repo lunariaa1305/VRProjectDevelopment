@@ -9,10 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb542592785b8941bd0bf67f352feae, type: 3}
+  m_Script: {fileID: 11500000, guid: f4cefbfec7fd6a8479625fd2f7d167ed, type: 3}
   m_Name: Lit
-  m_EditorClassIdentifier: Assembly-CSharp::LJ.Stats.Stat
-  displayName: 
-  maxValue: 0
-  minValue: 0
-  defaultValue: 0
+  m_EditorClassIdentifier: Assembly-CSharp::LJ.Stats.StatEffect
+  dataSet:
+  - name: 
+    providesImmunityTo: []
+    modifiers:
+    - name: Add
+      modType: 0
+      floatValue: 0.1
+    targetStat: {fileID: 11400000, guid: 6c7296c45e4c3ab4caceeba448df99f5, type: 2}
+  effectType: {fileID: 0}
+  interval: 0.15
+  isContinuous: 1
