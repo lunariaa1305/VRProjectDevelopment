@@ -9,6 +9,15 @@ public class crawlScript : MonoBehaviour
     public float speedModifier, movementSmoothing;
     bool moveWithRController, moveWithLController = false;
 
+    private LayerMask maskForWalls;
+    private RaycastHit hit;
+
+    private void Start()
+    {
+        maskForWalls = LayerMask.GetMask("Wall");
+    }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -60,7 +69,7 @@ public class crawlScript : MonoBehaviour
             XTransform = (startLControllerPosition.x - currentLControllerPosition.x) * speedModifier;
             ZTransform = (startLControllerPosition.z - currentLControllerPosition.z) * speedModifier;
         }
-        if (moveWithLController || moveWithRController)
+        if ((moveWithLController || moveWithRController) && !Physics.Raycast(transform.position, new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y, startTransformPosition.z + ZTransform), 5f, maskForWalls)) // Potential fix for wall clipping
         {
             transform.position = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y, startTransformPosition.z + ZTransform);
         }
