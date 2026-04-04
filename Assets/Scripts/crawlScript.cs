@@ -5,7 +5,7 @@ public class crawlScript : MonoBehaviour
 {
 
     Vector3 startRControllerPosition, currentRControllerPosition, startLControllerPosition, currentLControllerPosition, startTransformPosition;
-    float lButtonPress, rButtonPress, XTransform, ZTransform;
+    float lButtonPress, rButtonPress, XTransform, YTransform, ZTransform;
     public float speedModifier, movementSmoothing;
     bool moveWithRController, moveWithLController = false;
 
@@ -57,21 +57,24 @@ public class crawlScript : MonoBehaviour
         currentRControllerPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RHand);
         currentLControllerPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.LHand);
         XTransform = 0;
+        YTransform = 0;
         ZTransform = 0;
 
         if (moveWithRController)
         {
             XTransform = (startRControllerPosition.x - currentRControllerPosition.x) * speedModifier;
+            YTransform = (startRControllerPosition.y - currentRControllerPosition.y) * speedModifier;
             ZTransform = (startRControllerPosition.z - currentRControllerPosition.z) * speedModifier;
         }
         else if (moveWithLController)
         {
             XTransform = (startLControllerPosition.x - currentLControllerPosition.x) * speedModifier;
+            YTransform = (startLControllerPosition.y - currentLControllerPosition.y) * speedModifier;
             ZTransform = (startLControllerPosition.z - currentLControllerPosition.z) * speedModifier;
         }
-        if ((moveWithLController || moveWithRController) && !Physics.Raycast(transform.position, new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y, startTransformPosition.z + ZTransform), 5f, maskForWalls)) // Potential fix for wall clipping
+        if ((moveWithLController || moveWithRController) && !Physics.Raycast(transform.position, new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform), 5f, maskForWalls)) // Potential fix for wall clipping
         {
-            transform.position = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y, startTransformPosition.z + ZTransform);
+            transform.position = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform); // Potential improvement to Y movement
         }
     }
 }
