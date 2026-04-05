@@ -72,6 +72,9 @@ public class crawlScript : MonoBehaviour
             YTransform = (startLControllerPosition.y - currentLControllerPosition.y) * speedModifier;
             ZTransform = (startLControllerPosition.z - currentLControllerPosition.z) * speedModifier;
         }
+
+        Debug.DrawRay(transform.position, new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform) * 5);
+
         if ((moveWithLController || moveWithRController) && !Physics.Raycast(transform.position, new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform), 5f, maskForWalls)) // Potential fix for wall clipping
         {
             transform.position = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform); // Potential improvement to Y movement
