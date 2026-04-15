@@ -5,9 +5,17 @@ public class crawlScript : MonoBehaviour
 {
 
     Vector3 startRControllerPosition, currentRControllerPosition, startLControllerPosition, currentLControllerPosition, startTransformPosition;
-    float lButtonPress, rButtonPress, XTransform, ZTransform;
+    float lButtonPress, rButtonPress, XTransform, YTransform, ZTransform;
     public float speedModifier, movementSmoothing;
     bool moveWithRController, moveWithLController = false;
+
+    public LayerMask maskForWalls;
+
+    private void Start()
+    {
+        maskForWalls = LayerMask.GetMask("Collidable");
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -24,7 +32,8 @@ public class crawlScript : MonoBehaviour
             }
 
             moveWithRController = true;
-        } else
+        }
+        else
         {
             moveWithRController = false;
         }
@@ -45,24 +54,31 @@ public class crawlScript : MonoBehaviour
             moveWithLController = false;
         }
 
+        
+
         currentRControllerPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RHand);
         currentLControllerPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.LHand);
         XTransform = 0;
+        YTransform = 0;
         ZTransform = 0;
+
 
         if (moveWithRController)
         {
             XTransform = (startRControllerPosition.x - currentRControllerPosition.x) * speedModifier;
+            //YTransform = (startRControllerPosition.y - currentRControllerPosition.y) * speedModifier;
             ZTransform = (startRControllerPosition.z - currentRControllerPosition.z) * speedModifier;
         }
         else if (moveWithLController)
         {
             XTransform = (startLControllerPosition.x - currentLControllerPosition.x) * speedModifier;
+            //YTransform = (startLControllerPosition.y - currentLControllerPosition.y) * speedModifier;
             ZTransform = (startLControllerPosition.z - currentLControllerPosition.z) * speedModifier;
         }
-        if (moveWithLController || moveWithRController)
+
+        if ((moveWithLController || moveWithRController)) // Potential fix for wall clipping
         {
-            transform.position = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y, startTransformPosition.z + ZTransform);
+            transform.position = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform); // Potential improvement to Y movement
         }
     }
 }
