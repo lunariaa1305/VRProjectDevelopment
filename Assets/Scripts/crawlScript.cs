@@ -6,7 +6,7 @@ public class crawlScript : MonoBehaviour
 {
 
     Vector3 startRControllerPosition, currentRControllerPosition, startLControllerPosition, currentLControllerPosition, startTransformPosition;
-    public Vector3 movementVector;
+    public Vector3 movementVector, translationVector;
     float lButtonPress, rButtonPress, XTransform, YTransform, ZTransform;
     public float speedModifier, movementSmoothing;
     bool moveWithRController, moveWithLController, interrupt = false;
@@ -68,13 +68,13 @@ public class crawlScript : MonoBehaviour
         if (moveWithRController)
         {
             XTransform = (startRControllerPosition.x - currentRControllerPosition.x) * speedModifier;
-            //YTransform = (startRControllerPosition.y - currentRControllerPosition.y) * speedModifier;
+            YTransform = (startRControllerPosition.y - currentRControllerPosition.y) * speedModifier;
             ZTransform = (startRControllerPosition.z - currentRControllerPosition.z) * speedModifier;
         }
         else if (moveWithLController)
         {
             XTransform = (startLControllerPosition.x - currentLControllerPosition.x) * speedModifier;
-            //YTransform = (startLControllerPosition.y - currentLControllerPosition.y) * speedModifier;
+            YTransform = (startLControllerPosition.y - currentLControllerPosition.y) * speedModifier;
             ZTransform = (startLControllerPosition.z - currentLControllerPosition.z) * speedModifier;
         }
 
@@ -82,9 +82,9 @@ public class crawlScript : MonoBehaviour
         if ((moveWithLController || moveWithRController)) // Potential fix for wall clipping
         {
             movementVector = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform);
+            translationVector = new Vector3(XTransform, YTransform, ZTransform);
             Debug.DrawRay(transform.position, new Vector3(), Color.pink, 20f);
-            transform.position = movementVector; // Potential improvement to Y movement
-            
+            transform.position = movementVector;
         }
     }
     private void OnCollisionEnter(Collision collision)
