@@ -1,3 +1,4 @@
+using Oculus.Interaction.PoseDetection.Debug;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class crawlScript : MonoBehaviour
     bool moveWithRController, moveWithLController, interrupt = false;
 
     public LayerMask maskForWalls;
+    public Rigidbody myRigidBody;
 
     private void Start()
     {
@@ -20,7 +22,7 @@ public class crawlScript : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         rButtonPress = OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger);
         lButtonPress = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger);
@@ -79,32 +81,37 @@ public class crawlScript : MonoBehaviour
         }
 
 
-        if ((moveWithLController || moveWithRController)) // Potential fix for wall clipping
+        if (moveWithLController || moveWithRController)
         {
-            movementVector = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform);
-            translationVector = new Vector3(XTransform, YTransform, ZTransform);
-            Debug.DrawRay(transform.position, new Vector3(), Color.pink, 20f);
-            transform.position = movementVector;
+            movementVector = new Vector3(XTransform, YTransform, ZTransform);
+            
+            if (myRigidBody.linearVelocity.y < 0.5f)
+            {
+                myRigidBody.MovePosition(movementVector);
+            } else
+            {
+                myRigidBody.linearVelocity = Vector3.zero;
+            }
+            // transform.position = movementVector;
+        } else
+        {
+            // myRigidBody.MovePosition(Vector3.Lerp(movementVector, Vector3.zero,0.5f));
         }
+
+        // Once grabbing, start applying a large force in that direction proportional to the amount the player moves, but cut it off after a certain point so it doesnt override the momentum generated after launch
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         while (collision.gameObject.layer == 3)
         {
-            interrupt = true;
-            //transform.position = new Vector3(-movementVector.x, movementVector.y, -movementVector.z);
+            //interrupt = true;
+            //transform.position = new Vector3(-movementVector.x, -movementVector.y, -movementVector.z);
         }
 
         if (collision.gameObject.layer != 3)
         {
-            interrupt = false;
+            //interrupt = false;
         }
     }
 }
-
-
-/*
- * 
- *  https://developers.meta.com/horizon/documentation/unity/unity-isdk-ray-interaction/
- * 
- */
