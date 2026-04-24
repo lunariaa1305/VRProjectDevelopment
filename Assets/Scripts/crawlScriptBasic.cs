@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class crawlScript : MonoBehaviour
+public class crawlScriptBasic : MonoBehaviour
 {
 
     Vector3 startRControllerPosition, currentRControllerPosition, startLControllerPosition, currentLControllerPosition, startTransformPosition;
@@ -60,7 +60,7 @@ public class crawlScript : MonoBehaviour
             moveWithLController = false;
         }
 
-        
+
 
         currentRControllerPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RHand);
         currentLControllerPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.LHand);
@@ -84,8 +84,7 @@ public class crawlScript : MonoBehaviour
 
         if (moveWithLController || moveWithRController)
         {
-            movementVector = new Vector3(startTransformPosition.x + XTransform, 0f, startTransformPosition.z + ZTransform);
-            transform.position = movementVector;
+            movementVector = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform);
         }
 
         // Once grabbing, start applying a large force in that direction proportional to the amount the player moves, but cut it off after a certain point so it doesnt override the momentum generated after launch
