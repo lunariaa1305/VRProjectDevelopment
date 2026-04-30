@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bc12b0680b55c8e4b961ddd34f582a64
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/DemoInstances/Effects/EffectTypes/Flaming.asset
+  uploadId: 772003

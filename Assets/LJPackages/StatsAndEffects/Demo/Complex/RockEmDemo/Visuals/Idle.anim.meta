@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6a5eaf79b24d9ed42a08018d7fd0bdd7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/Complex/RockEmDemo/Visuals/Idle.anim
+  uploadId: 772003

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 4025c0fd5fff7634ab9d9844b0cbf536
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Core/Interfaces/IRespond.cs
+  uploadId: 772003

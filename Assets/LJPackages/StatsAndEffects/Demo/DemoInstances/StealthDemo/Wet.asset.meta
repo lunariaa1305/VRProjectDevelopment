@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 497638eca7083934d8ea48d901ef781f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/DemoInstances/StealthDemo/Wet.asset
+  uploadId: 772003

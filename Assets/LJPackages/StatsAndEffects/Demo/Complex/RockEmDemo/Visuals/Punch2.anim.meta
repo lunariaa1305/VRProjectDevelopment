@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2dc50c2e1d7dab147936a449eedda63b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/Complex/RockEmDemo/Visuals/Punch2.anim
+  uploadId: 772003

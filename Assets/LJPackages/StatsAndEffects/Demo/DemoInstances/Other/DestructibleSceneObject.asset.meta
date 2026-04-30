@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 87173183412245b418684a204a889154
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/DemoInstances/Other/DestructibleSceneObject.asset
+  uploadId: 772003

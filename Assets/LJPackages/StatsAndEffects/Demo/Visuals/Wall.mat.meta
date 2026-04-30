@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 458c903586daf534098ea79888b0d915
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/Visuals/Wall.mat
+  uploadId: 772003

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 317f81ee943fe3b4d9e15d913673abc4
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Utilities/Interfaces/INameable.cs
+  uploadId: 772003

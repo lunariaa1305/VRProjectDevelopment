@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e4728158c38188843915216f6205d881
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/Prefabs/FlamingListener.prefab
+  uploadId: 772003

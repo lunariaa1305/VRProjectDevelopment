@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fcce562623e41224faae1af37b69c8fb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/Prefabs/BlueFighter.prefab
+  uploadId: 772003

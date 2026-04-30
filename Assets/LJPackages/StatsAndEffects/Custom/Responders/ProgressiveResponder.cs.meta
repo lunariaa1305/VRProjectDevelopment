@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0674be2d682da0143a3a8da4540cc21d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 4198ccb7234f6e74fae7877572708bae, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Custom/Responders/ProgressiveResponder.cs
+  uploadId: 772003

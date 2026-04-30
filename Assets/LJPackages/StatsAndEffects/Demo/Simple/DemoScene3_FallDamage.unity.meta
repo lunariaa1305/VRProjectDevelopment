@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8a8e191e0878c7c4f9b15fe13b5e0c5f
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304822
+  packageName: LJ Stats and Effects
+  packageVersion: 2.00
+  assetPath: Assets/LJPackages/StatsAndEffects/Demo/Simple/DemoScene3_FallDamage.unity
+  uploadId: 772003
