@@ -15,6 +15,7 @@ public class crawlScriptBasic : MonoBehaviour
 
     public LayerMask maskForWalls;
     public FirstPersonLocomotor myLocomotor;
+    public MetaXRHeadBlocking myHeadBlocker;
     public Oculus.Interaction.Locomotion.CharacterController myCharacterController;
 
     private void Start()
@@ -84,7 +85,11 @@ public class crawlScriptBasic : MonoBehaviour
 
         if (moveWithLController || moveWithRController)
         {
-            movementVector = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform);
+            // movementVector = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y + YTransform, startTransformPosition.z + ZTransform);
+            if (!myHeadBlocker.DetectHit(transform.position))
+            {
+                myLocomotor.Velocity = new Vector3 (XTransform, YTransform, ZTransform);
+            }
         }
 
         // Once grabbing, start applying a large force in that direction proportional to the amount the player moves, but cut it off after a certain point so it doesnt override the momentum generated after launch
