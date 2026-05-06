@@ -84,7 +84,7 @@ public class crawlScript : MonoBehaviour
 
         if (moveWithLController || moveWithRController)
         {
-            movementVector = new Vector3(startTransformPosition.x + XTransform, 0f, startTransformPosition.z + ZTransform);
+            movementVector = new Vector3(startTransformPosition.x + XTransform, startTransformPosition.y, startTransformPosition.z + ZTransform);
             transform.position = movementVector;
         }
 
