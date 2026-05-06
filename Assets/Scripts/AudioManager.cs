@@ -8,9 +8,9 @@ public Sound[] sounds;
 
     // Initialisation for the sounds
     void Awake() {
-        foreach (Sounds s in sounds)
+        foreach (Sound s in sounds)
         {
-           s.source = gameObject.Addcomponent<AudioScource>();
+           s.source = gameObject.AddComponent<AudioScource>();
            s.source.clip = s.clip;
 
            s.source.volume = s.volume;
@@ -21,7 +21,7 @@ public Sound[] sounds;
     // Update is called once per frame
     public void Play (string name) {
         
-        sounds s = Array.Find(sounds, sounds => sounds.name == name);
+        sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Play();
 
 
